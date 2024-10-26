@@ -18,6 +18,22 @@
   "categories": [
     "Other"
   ],
+  "contributes": {
+    "configuration": {
+      "title": "Typing Speed",
+      "properties": {
+        "typingSpeed.display": {
+          "type": "string",
+          "default": "wpm",
+          "enum": [
+            "wpm",
+            "cpm"
+          ],
+          "description": "Display typing speed as words per minute (wpm) or characters per minute (cpm)."
+        }
+      }
+    }
+  },
   "activationEvents": [
     "*"
   ],
@@ -38,6 +54,6 @@
     "mocha": "^2.3.3",
     "ts-node": "^3.0.4",
     "typescript": "^2.0.3",
-    "vscode": "^1.0.0"
+    "vscode": "^1.1.37"
   }
 }
